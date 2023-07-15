@@ -214,6 +214,54 @@ img {
   display: block;
 }
 
+.facts .container .fact-title {
+  max-width: 33.875rem;
+}
+.facts .container .fact-title .title-text {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.facts .container .fact-title .dsc-text {
+  text-align: left;
+}
+.facts .container .facts-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+.facts .container .facts-container .fact {
+  flex: 0 0 calc(25% - 0.25rem);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.facts .container .facts-container .fact .fact-content {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid #FF900E;
+  padding: 2rem;
+}
+.facts .container .facts-container .fact .fact-content .fact-title {
+  color: #424242;
+  font-size: 2.8125rem;
+  font-weight: 600;
+}
+.facts .container .facts-container .fact .fact-content .fact-dsc {
+  color: #727272;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 768px) {
   .header .container nav {
     flex-direction: column;
