@@ -33,6 +33,7 @@ img {
 .container {
     max-width: 90rem;
     margin: 0 auto;
+    padding: 4rem;
 }
 
 .btn {
@@ -70,6 +71,7 @@ img {
 // header section style start
 .header {
     background: rgba(255, 144, 14, 0.10);
+
     .container {
         padding: 2rem 4rem 2.83rem;
 
@@ -120,19 +122,68 @@ img {
                 .dsc-text {
                     margin-bottom: 2rem;
                 }
+
+                .btn {
+                    margin-bottom: 2rem;
+                }
             }
+
             .img {
                 width: 100%;
                 height: 100%;
             }
         }
 
-        
+
+    }
+}
+
+// feature section style start
+.feature {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .feature-img {
+            flex: 1 0 calc(50% - 1rem);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .feature-text {
+            flex: 1 0 calc(50% - 1rem);
+
+            .title-text {
+                font-size: 2.8125rem;
+                font-weight: 500;
+
+                .dark {
+                    color: $dark;
+                }
+
+                .orange {
+                    color: $orange;
+                }
+            }
+
+            .dsc-text {
+                text-align: left;
+                margin: 1.5rem 0 2rem;
+            }
+        }
     }
 }
 
 
 
+
+
+
+// media query code start
 @media screen and (max-width: 768px) {
     .header {
         .container {
@@ -146,7 +197,7 @@ img {
                     }
                 }
             }
-    
+
             .header-content {
                 .header-text {
                     .header-title {
@@ -157,9 +208,27 @@ img {
             }
         }
     }
+
+    // feature section style start
+    .feature {
+        .container {
+            .feature-img {
+                flex: 1 0 100%;
+            }
+
+            .feature-text {
+                flex: 1 0 100%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
+    
+    .container {
+        padding: 2rem;
+    }
+
     .header {
         .container {
             padding: 2rem;
@@ -169,6 +238,22 @@ img {
                         font-size: 2rem;
                         margin: 3rem 0 1rem;
                     }
+                }
+            }
+        }
+    }
+
+    // feature section style start
+    .feature {
+        .container {
+            .feature-img {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .feature-text {
+                .title-text {
+                    font-size: 1.8rem;
+                    font-weight: 500;
                 }
             }
         }
