@@ -178,7 +178,96 @@ img {
     }
 }
 
+// extra-fetrues section style
+.extra-fetrues {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
 
+        .extra-features-content {
+            flex: 1 0 calc(50% - 1rem);
+            padding-right: 3.5rem;
+
+            .title-text {
+                margin: 0 0 1rem 0;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -1rem;
+                    top: 0;
+                    bottom: 0;
+                    background: $orange;
+                    width: 0.3125rem;
+                    height: 100%;
+                }
+            }
+
+            .dsc-text {
+                text-align: left;
+                margin: 1rem 0 1rem;
+            }
+
+            .features-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                gap: 1rem;
+
+                .features {
+                    padding: 1.88rem;
+                    border-radius: 0.5rem;
+                    background: $white;
+                    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+
+                    .f-title {
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                    }
+
+                    .f-dsc {
+                        font-size: 1rem;
+                        font-weight: 400;
+                        color: $dark;
+                        margin-top: .12rem;
+                    }
+                }
+            }
+        }
+
+        .extra-features-img {
+            flex: 1 0 calc(50% - 1rem);
+            position: relative;
+            margin-bottom: 3.5rem;
+
+            .exp {
+                position: absolute;
+                left: -3.5rem;
+                bottom: -3.5rem;
+                background: $orange;
+                padding: 1rem 1.3rem;
+                border-radius: .5rem;
+
+                .exp-title {
+                    text-align: center;
+                    font-size: 4.0625rem;
+                    font-weight: 700;
+                    color: $white;
+
+                    span {
+                        font-size: 2rem;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -221,10 +310,40 @@ img {
             }
         }
     }
+
+    // extra-fetrues section style
+    .extra-fetrues {
+        .container {
+
+
+            .extra-features-content {
+                flex: 1 0 100%;
+                padding-right: 0;
+
+                .title-text {
+                    margin: 0 0 0 1rem;
+                }
+            }
+
+            .extra-features-img {
+                flex: 1 0 100%;
+                padding-left: 3.5rem;
+
+                .exp {
+                    left: 0;
+
+                    .exp-title {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 576px) {
-    
+
     .container {
         padding: 2rem;
     }
@@ -232,6 +351,7 @@ img {
     .header {
         .container {
             padding: 2rem;
+
             .header-content {
                 .header-text {
                     .header-title {
@@ -254,6 +374,33 @@ img {
                 .title-text {
                     font-size: 1.8rem;
                     font-weight: 500;
+                }
+            }
+        }
+    }
+
+    // extra-fetrues section style
+    .extra-fetrues {
+        .container {
+            .extra-features-content {
+                .title-text {
+                    font-size: 2rem;
+                }
+            }
+
+            .extra-features-img {
+                flex: 1 0 100%;
+                padding-left: 3.5rem;
+
+                .exp {
+                    left: 0;
+
+                    .exp-title {
+                        font-size: 2rem;
+                        span{
+                            font-size: 1rem;
+                        }
+                    }
                 }
             }
         }

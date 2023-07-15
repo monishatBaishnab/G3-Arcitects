@@ -138,6 +138,82 @@ img {
   margin: 1.5rem 0 2rem;
 }
 
+.extra-fetrues .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.extra-fetrues .container .extra-features-content {
+  flex: 1 0 calc(50% - 1rem);
+  padding-right: 3.5rem;
+}
+.extra-fetrues .container .extra-features-content .title-text {
+  margin: 0 0 1rem 0;
+  position: relative;
+}
+.extra-fetrues .container .extra-features-content .title-text::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 0;
+  bottom: 0;
+  background: #FF900E;
+  width: 0.3125rem;
+  height: 100%;
+}
+.extra-fetrues .container .extra-features-content .dsc-text {
+  text-align: left;
+  margin: 1rem 0 1rem;
+}
+.extra-fetrues .container .extra-features-content .features-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.extra-fetrues .container .extra-features-content .features-container .features {
+  padding: 1.88rem;
+  border-radius: 0.5rem;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.extra-fetrues .container .extra-features-content .features-container .features .f-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.extra-fetrues .container .extra-features-content .features-container .features .f-dsc {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #727272;
+  margin-top: 0.12rem;
+}
+.extra-fetrues .container .extra-features-img {
+  flex: 1 0 calc(50% - 1rem);
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+.extra-fetrues .container .extra-features-img .exp {
+  position: absolute;
+  left: -3.5rem;
+  bottom: -3.5rem;
+  background: #FF900E;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+}
+.extra-fetrues .container .extra-features-img .exp .exp-title {
+  text-align: center;
+  font-size: 4.0625rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.extra-fetrues .container .extra-features-img .exp .exp-title span {
+  font-size: 2rem;
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
   .header .container nav {
     flex-direction: column;
@@ -155,6 +231,23 @@ img {
   }
   .feature .container .feature-text {
     flex: 1 0 100%;
+  }
+  .extra-fetrues .container .extra-features-content {
+    flex: 1 0 100%;
+    padding-right: 0;
+  }
+  .extra-fetrues .container .extra-features-content .title-text {
+    margin: 0 0 0 1rem;
+  }
+  .extra-fetrues .container .extra-features-img {
+    flex: 1 0 100%;
+    padding-left: 3.5rem;
+  }
+  .extra-fetrues .container .extra-features-img .exp {
+    left: 0;
+  }
+  .extra-fetrues .container .extra-features-img .exp .exp-title {
+    font-size: 3rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -174,5 +267,21 @@ img {
   .feature .container .feature-text .title-text {
     font-size: 1.8rem;
     font-weight: 500;
+  }
+  .extra-fetrues .container .extra-features-content .title-text {
+    font-size: 2rem;
+  }
+  .extra-fetrues .container .extra-features-img {
+    flex: 1 0 100%;
+    padding-left: 3.5rem;
+  }
+  .extra-fetrues .container .extra-features-img .exp {
+    left: 0;
+  }
+  .extra-fetrues .container .extra-features-img .exp .exp-title {
+    font-size: 2rem;
+  }
+  .extra-fetrues .container .extra-features-img .exp .exp-title span {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
