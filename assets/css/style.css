@@ -233,7 +233,7 @@ img {
   margin-top: 2.5rem;
 }
 .facts .container .facts-container .fact {
-  flex: 0 0 calc(25% - 0.25rem);
+  flex: 0 0 calc(25% - 1rem);
   height: 100%;
   width: 100%;
   display: flex;
@@ -260,6 +260,44 @@ img {
   color: #727272;
   font-size: 1.25rem;
   font-weight: 600;
+}
+
+.sponsors .container .sponsors-title {
+  max-width: 33.875rem;
+  margin: 0 auto;
+}
+.sponsors .container .sponsors-title .title-text {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.sponsors .container .sponsors-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+.sponsors .container .sponsors-container .sponsors {
+  flex: 0 0 calc(20% - 1rem);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer .container .content {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #FFF4E7;
+}
+footer .container .content p {
+  color: #131313;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {
@@ -297,6 +335,9 @@ img {
   .extra-fetrues .container .extra-features-img .exp .exp-title {
     font-size: 3rem;
   }
+  .sponsors .container .sponsors-container .sponsors {
+    flex: 0 0 calc(40% - 1rem);
+  }
 }
 @media screen and (max-width: 576px) {
   .container {
@@ -330,6 +371,9 @@ img {
     font-size: 2rem;
   }
   .extra-fetrues .container .extra-features-img .exp .exp-title span {
+    font-size: 1rem;
+  }
+  footer .container .content p {
     font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
